@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=scrip, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let estadocivil = "C";
+        switch (estadocivil.toUpperCase()) {
+            case "C":
+                console.log("Casado");
+                break;
+
+            case "V":
+                console.log("Viudo");
+                break;
+
+            case "S":
+                console.log("Solteiro");
+                break;
+
+            case "D":
+                console.log("Divociado");
+                break;
+
+        }
+        let nota = 0;
+        switch (nota) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                console.log("insuficiante")
+                break;
+            case 6:
+            case 7:
+                console.log("notable")
+                break;
+            case 8:
+            case 9:
+                console: log("sobresaliente")
+
+            default:
+                break;
+        }
+
+        let nota1 = 0;
+        switch (nota) {
+            case 0:
+            case 2:
+            case 3:
+                console.log("Insuficiente")
+                break;
+            case 4:
+            case 5:
+            case 6:
+                console.log("Suficiente")
+                break;
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+                console.log("Bien")
+                break;
+        }
+
+        let dia = 5, mes = 11, anio = 2023;
+        if (mes >= 1 & mes <= 12) {
+            if (dia >= 1 & dia <= 30) {
+                console.log("la fecha " + dia + "/" + mes + "/" + anio + " es correcta ");
+                console.log(`la fecha ${dia}/${mes}/${anio} es corecta`);
+            } else {
+                console.log("Dia Invalido");
+            }
+        }
+        else {
+            console.log("Mes Invalido");
+        }
+
+        let dia1 = 30, mes1 = 12, anio1 = 2001
+        if (mes >= 1 && mes <= 12) {
+            switch (mes) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    if (dia >= 1 && dia <= 31) {
+                        console.log("la fecha " + dia + "/" + mes + "/" + anio + " es correcta ");
+                        console.log(`la fecha ${dia}/${mes}/${anio} es corecta`);
+                    } else {
+                        console.log("el dia es invalido")
+                    }
+                    break;
+                default:
+                    console.log("mes invalido")
+            }
+            //Bucle
+            //ejemplo mostrar los primeros 10 numeros
+            for (let index = 1; index <= 10; index++) {
+                console.log(index);
+            }
+            //mostrar los numeros del 10 al 1 
+            console.log("mostar los números de 10 al 1")
+            for (let index = 10; index >= 1; index--) {
+                console.log(index);
+            }
+            //escrebir la tabla de multiplicar de número solicitado
+            let numero = 9
+            for (let index = 1; index < 10; index++) {
+                console.log(index + "x" + numero + "=" + index*numero)
+                
+            }
+            //pedir número N y mostrar todos los números del 1 al N
+            let N = 9
+            for (let index = 1; index <= N; index++) {
+                console.log(index)
+                
+            }
+            //pedir todos los numeros del 100 al 0 de 7 en 7
+            for (let index = 0; index = 100; index -=7) {
+              console.log(index)  
+            }
+            //pedir los primeros 15 números y escribir la suma total
+            
+
+
+}
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>operadores</h1>
+    <form action="">
+        <label for="numero1"></label>
+        <input type="number" name="numero1" id="numero1">
+        <br>
+        <label for="numero2">numero2</label>
+        <input type="number" name="numero2" id="numero2">
+        <br>
+        <input type="button" value="operacion" onclick="operacion()">
+    </form>
+    <script>
+        function operacion(){
+            window.alert("entra en la funcion que se manda llamar en el botón");
+            let num1 = document.getElementById("numero1").value;
+            console.log("valor de num1 ->"+num1 );
+            let num2 = document.getElementById("numero2").value;
+            console.log = ("valor de mun2 ->"+num2);
+        }
+
+        var global = "global";
+        let local = "global";
+        console.log(window);        
+        let nombre2 = 'gabriela "code"';
+        let nombre="Gabriela"
+        console.log(nombre2)
+        let oracion = 'este es un ejemplo que acepta saltos de lineas';
+        console.log (oracion)
+        console.log (nombre +" "+ nombre2)
+        console.log (`${nombre} ${nombre2}`);
+        console.log ("longitud de la cadena" + nombre);
+        let nombreAluno = "Jose Luis Ramires";
+        console.log(oracion.toUpperCase());
+        console.log(oracion.toLowerCase());
+        console.log(oracion.charAt(0));
+        console.log(oracion.charAt(oracion.length-1));
+        let objeto = "casa";
+        console.log(objeto.charAt(0));
+        console.log(objeto.charAt(objeto.length-1));
+        console.log(objeto.substring(1));
+        console.log(objeto.substring(0,1));
+        console.log(objeto.substring(0,2));
+        console.log(objeto.substring(2,4));
+        console.log(objeto.substring(2));
+        //console.log
+        let frase ="bienvenidos al curso JS";
+        //obtener la palabra bienvenidos
+        console.log(frase.indexOf(""))
+        console.log("("+frase.substring(0,11)+")");
+         //obtener la palabra JS
+         console.log(`(${frase.substring(frase.length-2)})`);
+         
+         //tipo númerico
+         let numeroEntero = 5.240;
+         console.log(numeroEntero)
+         //tipo de null
+         let tipo
+         //tipo NaN
+         let tipoNaN = 3.5 * "casa"
+         console.log(tipoNaN);
+         let numero1 = 5;
+         let numero2 = 7;
+         let resultado = numero1 + numero2;
+         console.log("Resto -> " + resultado);
+         resultado = numeero1 % 2;
+         console.log
+
+        
+
+
+
+    </script>
+
+</body>
+</html>

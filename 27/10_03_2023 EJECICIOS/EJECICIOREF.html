@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rerefencia</title>
+</head>
+
+
+<body>
+    <form  id="cartTable"action="">
+        <label for="referencia1">Referencia:</label>
+        <input type="text" name="referencia1" id="referencia1"><br><br>
+        <br>
+        <br>
+        <label for="direccion">Direccion:</label>
+        <br>
+        <textarea id="direccion" name="direccion"></textarea><br><br>
+        <br>
+        <label for="Habitacion1">habitacion:</label>
+        <input type="number" name="Habitacion1"id="Habitacion1" min="1" max="5"  ><br><br>
+        <br>
+        <br>
+        <label for="urlhttps://placeimg.com/100/100/animals">URL:</label>
+        <input type="url" id="url" name="url"><br><br>
+        <button type="button" onclick="anadir()">Añadir:</button>
+
+    </form>
+    <table id="cart">
+        <tr>
+       <td>Referencia:</td>
+       <td>direccion:</td>
+       <td>Num:Habitacion:</td>
+       <td>Imagen:</td>
+       </tr> 
+       <tbody>
+       
+       </tbody>
+       </table>
+       <script>
+        function anadir() {
+            let referencia1 = document.getElementById("referencia1").value;
+            console.log(referencia1);
+
+            let direccion = document.getElementById("direccion").value;
+            console.log(direccion);
+
+            let Habitacion1 = document.getElementById("Habitacion1").value;
+            console.log (Habitacion1);
+            
+            let url = document.getElementById("url").value;
+            console.log (url);
+
+             const cartTable = document.getElementById("cart");
+             let img = document.createElement('img'); 
+
+const neWRow = document.createElement("tr");
+neWRow.innerHTML = `
+<td>${referencia1}</td>
+ <td>${direccion}</td>
+ <td>${Habitacion1}</td>
+ <td><img src=${url}></td>    `
+
+ document.body.appendChild(img);
+
+ cartTable.querySelector("tbody").appendChild(neWRow);
+
+
+}
+       </script>
+
+       
+
+</body>
+</html>

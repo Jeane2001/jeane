@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sinParamentoEntadraNiSalida() {
+          console.log("funcion sin paramento")  
+        }
+        sinParamentoEntadraNiSalida();
+        function paramentoEntrada(nombre) {
+           console.log("Bien venido al curso de Java" + nombre) 
+        }
+        paramentoEntrada("Jeane");
+
+        paramentoEntrada();
+        function ParamentoEntrada(nombre, apelido) {
+            console.log("bienvenido al curso"+ nombre+" "+apelido);
+            console.log(`HOLA ${nombre} ${apelido}`)
+            }
+
+            paramentoEntrada("Juan", "Lopez");
+
+        
+        //ejemplo cuando se define una variable y la paso como paramentro
+        let nombreAlumno = "juan"
+        paramentoEntrada(nombreAlumno)
+
+        function paramenteSalida() {
+            return "Desde la funcio";
+        }
+        console.log(paramenteSalida()); //ejemplo de mostralo directamente
+
+        let guardaResultado = paramenteSalida();
+        console.log(guardaResultado);
+
+        function saludo(nombre) {
+           return "buenos dias " + nombre;
+        }
+        console.log(saludo("Rosa"));
+        guardaResultado=saludo("juan");
+        console.log(guardaResultado)
+
+        //hacer una funcion para cacular el area de un cuadrado
+        //con paramento d entrada y salida 
+        function areaCuadrado(lado) {
+            return (lado**2)
+                
+        }
+
+        console.log(areaCuadrado(5));
+        let area1 = areaCuadrado(3);
+        console.log("El area del Cuadrdoes ->" +area1);
+        //hacer uns funcion para calcular el area del circulo
+        //con parametro de area de entrada y salida
+        //Math.PI
+        function CauculaAreaCiculo(radio) {
+            return Math.PI *radio ** 2;
+            //retun Math.PI * radio * 2;
+            //return Math.PI *Math.pow(radio,2);
+
+
+            
+
+
+        }
+        consolo.log("Area del Ciculo ->"+ CauculaAreaCiculo(2));
+
+    </script>
+</body>
+</html>
